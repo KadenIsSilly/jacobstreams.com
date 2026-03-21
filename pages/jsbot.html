@@ -12,15 +12,14 @@
         <meta name="author" content="KadenIsSilly">
 
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="jacobstreams.com">
-        <meta property="og:title" content="JStreamsBot Info">
-        <meta property="og:description" content="JStreamsBot is my 24/7 live reruns Twitch channel! It streams to my bot Twitch account 24/7 broadcasting old JacobStreams VODs & sometimes Words On Stream with a very high amount of ads. All money generated from this channel is spent on JacobStreams content, giveaways, charity donations & more!">
+        <meta property="og:title" content="JacobStreams">
+        <meta property="og:description" content="JStreamsBot">
         <meta property="og:url" content="https://jacobstreams.com/jstreamsbot">
         <meta property="og:image" content="https://jacobstreams.com/assets/images/favicon.png">
         <meta property="theme-color" content="#549ae2">
         <meta property="og:locale" content="en_GB">
 
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="JStreamsBot Info | JacobStreams">
         <meta name="twitter:description" content="JStreamsBot is my 24/7 live reruns Twitch channel! It streams to my bot Twitch account 24/7 broadcasting old JacobStreams VODs & sometimes Words On Stream with a very high amount of ads. All money generated from this channel is spent on JacobStreams content, giveaways, charity donations & more!">
         <meta name="twitter:url" content="https://jacobstreams.com/jstreamsbot">
@@ -70,6 +69,31 @@
                 border-radius: 12px;
                 height: 360px;
                 width: 640px;
+            }
+
+            @media (max-width: 600px) {
+                main {
+                    max-width: 350px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                #info p {
+                    font-size: 15.6px;
+                }
+
+                .title {
+                    font-size: 32px;
+                }
+
+                #info p a {
+                    font-size: 14px;
+                }
+
+                #embed iframe {
+                    height: 207px;
+                    width: 368px;
+                }
             }
         </style>
     </head>

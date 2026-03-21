@@ -6,21 +6,20 @@
         <meta name="color-scheme" content="light">
 
         <title>Events | JacobStreams</title>
-        <meta name="description" content="">
+        <meta name="description" content="I love running on stream events and producing live shows! This webpage displays all of them!">
         <link rel="canonical" href="https://jacobstreams.com/events">
         <link rel="icon" type="image/png" href="/assets/images/favicon.png">
         <meta name="author" content="KadenIsSilly">
 
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="jacobstreams.com">
-        <meta property="og:title" content="Events">
-        <meta property="og:description" content="">
+        <meta property="og:title" content="JacobStreams">
+        <meta property="og:description" content="Events">
         <meta property="og:url" content="https://jacobstreams.com/events">
         <meta property="og:image" content="https://jacobstreams.com/assets/images/favicon.png">
         <meta property="theme-color" content="#549ae2">
         <meta property="og:locale" content="en_GB">
 
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="Events | JacobStreams">
         <meta name="twitter:description" content="">
         <meta name="twitter:url" content="https://jacobstreams.com/events">
@@ -118,6 +117,70 @@
                 height: 342px;
                 width: 608px;
             }
+
+            footer {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            footer p {
+                font-weight: 400;
+            }
+
+            footer p a {
+                font-weight: 600;
+                text-decoration-thickness: 2px;
+            } footer p a:hover {
+                text-decoration: underline;
+            } 
+
+            @media (max-width: 600px) {
+                main {
+                    max-width: 350px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .title {
+                    font-size: 32px;
+                }
+
+                .desc {
+                    font-size: 16px;
+                }
+
+                .events a {
+                    font-size: 15px;
+                }
+
+                #gg .logo {
+                    width: 220px;
+                }
+
+                #awards .logo {
+                    width: 138px;
+                }
+
+                #jackpots .logo {
+                    width: 220px;
+                }
+
+                #gg p, #awards p, #jackpots p {
+                    text-align: center;
+                    font-size: 15px;
+                    line-height: 1.4;
+                    text-shadow: 0 3px 6px #00000033;
+                }
+
+                iframe {
+                    height: 207px;
+                    width: 368px;
+                }
+
+                footer p {
+                    font-size: 14px;
+                }
+            }
         </style>
     </head>
 
@@ -183,7 +246,13 @@
 
                 <iframe id="jackpots-iframe" width="608" height="342" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
+
+            <hr>
         </main>
+
+        <footer>
+            <p>Art by <a href="https://bsky.app/profile/inetaarts.bsky.social" target="_blank">Ineta</a></p>
+        </footer>
 
         <script src="/scripts/script.js"></script>
 

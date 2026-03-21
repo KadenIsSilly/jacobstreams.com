@@ -15,7 +15,19 @@
     },
     {
       "source": "/portfolio",
-      "destination": "/pages/307.html"
+      "destination": "/307.html"
+    },
+    {
+      "source": "/mc",
+      "destination": "/pages/vcmc.html"
+    },
+    {
+      "source": "/hats",
+      "destination": "/pages/hats.html"
+    },
+    {
+      "source": "/discord",
+      "destination": "/pages/discord.html"
     }
   ]
 }
