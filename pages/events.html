@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light">
+
+        <title>Events | JacobStreams</title>
+        <meta name="description" content="">
+        <link rel="canonical" href="https://jacobstreams.com/events">
+        <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+        <meta name="author" content="KadenIsSilly">
+
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="jacobstreams.com">
+        <meta property="og:title" content="Events">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="https://jacobstreams.com/events">
+        <meta property="og:image" content="https://jacobstreams.com/assets/images/favicon.png">
+        <meta property="theme-color" content="#549ae2">
+        <meta property="og:locale" content="en_GB">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Events | JacobStreams">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:url" content="https://jacobstreams.com/events">
+        <meta name="twitter:image" content="https://jacobstreams.com/assets/images/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/styles/style.css">
+
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 90vh;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+
+            .title {
+                font-size: 36px;
+                color: var(--title);
+                text-shadow: 0 3px 7px #0000004d;
+                user-select: none;
+            }
+
+            .desc {
+                font-size: 18px;
+                text-shadow: 0 3px 7px #0000004d;
+            }
+
+            .events {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .events a {
+                font-size: 17px;
+                color: var(--sub-text);
+                text-shadow: 0 3px 6px #0000002a;
+                text-decoration: underline;
+                text-decoration-thickness: 1.5px;
+                transition: all 0.2s ease;
+            } .events a:hover {
+                color: var(--title);
+            }
+
+            #gg, #awards, #jackpots {
+                text-align: center;
+            }
+
+            #gg .logo {
+                width: 270px;
+            }
+
+            #awards .logo {
+                width: 164px;
+            }
+
+            #jackpots .logo {
+                width: 256px;
+            }
+
+            #gg p, #awards p, #jackpots p {
+                text-align: center;
+                font-size: 17.6px;
+                line-height: 1.4;
+                text-shadow: 0 3px 6px #00000033;
+            }
+
+            #gg p a, #awards p a, #jackpots p a  {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                transition: all 0.2s ease;
+            } #gg p a, #awards p a, #jackpots p a:hover {
+                color: var(--title);
+            }
+
+            #gg .title, #awards .title, #jackpots .title {
+                margin-bottom: 8px;
+                font-size: 28px;
+                color: var(--title);
+                text-shadow: 0 3px 7px #0000004d;
+            }
+
+            iframe {
+                margin-top: 20px;
+                border: var(--card-border) solid 3px;
+                border-radius: 12px;
+                height: 342px;
+                width: 608px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="/">Home</a>
+            <a href="/events">Events</a>
+            <a href="/jstreamsbot">JStreamsBot</a>
+            <a href="/portfolio">Portfolio</a>
+        </header>
+
+        <main>
+            <h1 class="title">Events</h1>
+            <p class="desc">I love running on stream events and producing live shows!</p>
+            <p class="desc">Below is some of my best recurring events!</p>
+            <section class="events">
+                <a href="#gg">Goat Games</a>
+                <a href="#awards">Shirley Awards</a>
+                <a href="#jackpots">Jacob Jackpots</a>
+            </section>
+
+            <hr>
+
+            <section id="gg">
+                <img class="logo" src="/assets/images/events/goat_games.png" alt="Goat Games' Logo">
+
+                <p>The GOAT Games is a challenge series where I go against my streamer friends in a series of games to see who the GOAT gamer is!</p>
+                <br>
+                <p>Each person picks 3 games that they are good at as well as 3 games that are neutral to both players, leading to up to 9 possible games played. The winner is the first person to win 5 games.</p>
+                <p>Past guests include <a href="https://www.twitch.tv/saithsfuff" target="_blank">saithsfuff</a>, <a href="https://www.twitch.tv/KadenIsSilly" target="_blank">KadenIsSilly</a> & <a href="https://www.twitch.tv/tertel" target="_blank">tertel</a>.</p>
+                <br>
+                <p>You can watch the most recent episode below.</p>
+
+                <iframe id="gg-iframe" width="608" height="342" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <hr>
+
+            <section id="awards">
+                <img class="logo" src="/assets/images/events/awards.png" alt="Shirley Awards' Logo">
+                <p>The Shirley Awards is my yearly community awards show! At the end of each year we celebrate the year that has passed, and the people who made it what it was!</p>
+                <br>
+                <p>It's always one of my biggest streams of the year, with tons of special guests, physical trophies for every winner & a highly produced live broadcast! It is made possible by JStreamsBot, which supplies most of its funding.</p>
+                <br>
+                <p>The Shirley Awards has been running since 2022 and was originally called The Silver Awards. It has evolved over time, now consisting of guest presenters, special surprises & announcements! It always takes place at the end of December.</p>
+                <br>
+                <p>You can watch all past Shirley Awards' <a href="https://www.youtube.com/playlist?list=PL_0qstDTXacaCNDk81c86Lz3Xmt7tUw2v" target="_blank">here</a>, or the most recent one below.</p>
+
+                <iframe id="awards-iframe" width="608" height="342" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <hr>
+
+            <section id="jackpots">
+                <img class="logo" src="/assets/images/events/jackpots.png" alt="Jacob Jackpots' Logo">
+                <p>Jacob Jackpots (affectionately known as Jacob Jillions) is a gameshow created by me where I put my streamer friends to the test to find out if they are smarter than the average Twitch chatter.</p>
+                <br>
+                <p>The show consists of five main rounds, with each question in the round worth one more point than the previous round (round 1 = 1 point per question up to round 5 = 5 points per question). The points per round is calculated by how easy/difficult a test group of JacobStreams viewers found the questions ahead of time, meaning the round worth 5 points should have the hardest questions. There is also a finale round, which is only played by one player, the person with the most points after the five main rounds. In the finale the contestant plays to win a large gifted sub prize.</p>
+                <br>
+                <p>Rounds vary from episode to episode, and are often catered towards the participants. Previous contestants include <a href="https://www.twitch.tv/Lukey" target="_blank">Lukey</a>, <a href="https://www.twitch.tv/ItsBandorax" target="_blank">ItsBandorax</a> & <a href="https://www.twitch.tv/tinycaity" target="_blank">tinycaity</a>. A season of the show comprises of 5 episodes, with different contestants on the first four episodes and then a winners showdown on the fifth and final episode of the season.</p>
+                <br>
+                <p>You can watch the most recent episode below.</p>
+
+                <iframe id="jackpots-iframe" width="608" height="342" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </main>
+
+        <script src="/scripts/script.js"></script>
+    </body>
+</html>

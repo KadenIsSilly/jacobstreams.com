@@ -1,0 +1,21 @@
+{
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/pages/home.html"
+    },
+    {
+      "source": "/events",
+      "destination": "/pages/events.html"
+    },
+    {
+      "source": "/jstreamsbot",
+      "destination": "/pages/jsbot.html"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/pages/307.html"
+    }
+  ]
+}
