@@ -9,6 +9,30 @@ function getPFP() {
         });
 }
 
+function checkLive() {
+    const accounts = [
+        { channel: 'jacobstreams', indicatorDot: 'main-indicator' },
+        { channel: 'jacobstreamsalt', indicatorDot: 'alt-indicator' }
+    ];
+
+    Promise.all(
+        accounts.map(({ channel, indicatorDot }) => {
+            const indicator = document.getElementById(indicatorDot)
+
+            fetch(`https://decapi.me/twitch/uptime/${channel}`)
+                .then(response => response.text())
+                .then(data => {
+                    const isLive = !data.toLowerCase().includes('offline');
+                    indicator.style.display = isLive ? 'inline-block' : 'none';
+                })
+                .catch(() => {
+                    indicator.style.display = 'none';
+                });
+        })      
+    );
+    
+}
+
 function getLatestVideo() {
     const playlists = [
         { playlist: '0qstDTXacYKzO-GBXitmu8OTwudY3nk', iframe: 'gg-iframe' },
@@ -19,8 +43,8 @@ function getLatestVideo() {
     Promise.all(
         playlists.map((item) =>
             fetch(`https://decapi.me/youtube/latest_pl_video?id=PL_${item.playlist}`)
-                .then((response) => response.text())
-                .then((data) => {
+                .then(response => response.text())
+                .then(data => {
                     const videoID = data.trim().split('https://youtu.be/')[1];
                     document.getElementById(item.iframe).src = `https://www.youtube.com/embed/${videoID}`;
                 })
@@ -32,4 +56,5 @@ function getLatestVideo() {
 }
 
 getPFP();
+checkLive();
 getLatestVideo();

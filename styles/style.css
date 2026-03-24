@@ -166,6 +166,14 @@ hr {
     color: var(--title);
 }
 
+.live-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ec1a1a;
+    border-radius: 50%;
+    box-shadow: 0 0 18px #ec1a1a63;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 0 15px;
