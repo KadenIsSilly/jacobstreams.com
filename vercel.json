@@ -27,6 +27,10 @@
       "destination": "/pages/hats.html"
     },
     {
+      "source": "/wheel",
+      "destination": "/pages/wheel.html"
+    },
+    {
       "source": "/discord",
       "destination": "/pages/discord.html"
     }
